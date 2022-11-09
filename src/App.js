@@ -3,7 +3,7 @@ import NavBar from "./Components/NavBar";
 import Home from "./pages/Home";
 import Products from "./pages/Product";
 import Reviews from "./pages/Reviews"; 
-// import Footer from "./Components/Footer";
+ import Footer from "./Components/Footer";
 
 
 function App() {
@@ -27,10 +27,11 @@ function App() {
       </Switch>
     </Router>
 
-    {/* <Footer /> */}
+     <Footer /> 
     </>
 
    );
 }
+
 
 export default App;
