@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   width: 100%;
@@ -40,6 +44,37 @@ body {
 
 .nav li:hover {
   color: white;
+}
+
+.footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(255, 0, 30);
+   color: white;
+   text-align: center;
+}
+
+.socials {
+  grid-auto-flow: column;
+  justify-self: center;
+}
+
+svg {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.policies{
+  column-gap: 200px;
+  margin-top: 30px;
+}
+
+.policies a {
+  margin-left: 50px;
 }
 
 
