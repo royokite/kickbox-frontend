@@ -13,11 +13,6 @@ const ProductCard = ({product}) => {
           {product.product_name}
         </div>
 
-        {/* <div className='px-0 mt-2'>
-        <span className='class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 pb-2 text-lg'>
-          ${product.price}
-        </span>
-      </div> */}
 
         <div class="productPrice">
             <span className="text-3xl font-bold text-gray-900 dark:text-white">{product.price}</span>
