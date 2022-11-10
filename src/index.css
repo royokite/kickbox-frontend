@@ -10,7 +10,7 @@ body {
 }
 
 .nav {
-  background-color: purple;
+  background-color:purple;
   display: flex;
   justify-content: space-between;
   align-items: left;
@@ -76,5 +76,6 @@ svg {
 .policies a {
   margin-left: 60px;
 }
+
 
 
