@@ -51,21 +51,9 @@ body {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: rgb(255, 0, 30);
+   background-color:purple;
    color: white;
    text-align: center;
-}
-
-.socials {
-  grid-auto-flow: column;
-  justify-self: center;
-}
-
-svg {
-  display: inline-flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 40px;
 }
 
 .policies{
