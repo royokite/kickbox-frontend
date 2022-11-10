@@ -6,21 +6,20 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  padding: 0; 
+  padding: 0;
 }
 
 .nav {
-  background-color:purple;
+  background-color: #471aa0;
   display: flex;
   justify-content: space-between;
   align-items: left;
   gap: 2rem;
-  padding: 0 1rem;
 }
 
 .nav ul {
   padding: 0;
-  padding-right: 800pt;
+  padding-right: 80pt;
   margin: 0;
   list-style: none;
   display: flex;
@@ -47,16 +46,15 @@ body {
 }
 
 .footer {
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:purple;
-   color: white;
-   text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #471aa0;
+  color: white;
+  text-align: center;
 }
 
-.policies{
+.policies {
   column-gap: 200px;
   margin-top: 30px;
 }
@@ -64,6 +62,3 @@ body {
 .policies a {
   margin-left: 60px;
 }
-
-
-
