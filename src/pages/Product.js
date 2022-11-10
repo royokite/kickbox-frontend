@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import AllProducts from '../Components/AllProducts';
-// import Search from '../Components/Search';
+ import Search from '../Components/Search';
 
 const Products = () => {
 const [productsList, setProductsList] = useState([]);
-// const [search, setSearch] = useState('');
+const [search, setSearch] = useState('');
 
 
 useEffect(()=> {
@@ -15,14 +15,14 @@ useEffect(()=> {
   .catch(err => console.log(err))
 }, [])
 
-// const visibleProducts = productsList.filter(product=>{
-//   return product.title.toLowerCase().includes(search.toLowerCase())
-// })
+const visibleProducts = productsList.filter(product=>{
+  return product.title.toLowerCase().includes(search.toLowerCase())
+ })
   return (
     <>
-    {/* <Search setSearch={setSearch} search={search} /> */}
+    <Search setSearch={setSearch} search={search} /> 
 
-    <AllProducts products={productsList} />
+    <AllProducts products={visibleProducts} />
     </>
   )
 }
