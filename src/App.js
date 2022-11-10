@@ -12,7 +12,7 @@ function App() {
     <Router>
     <NavBar />
       <Switch>
-        <Route exact path={"/project"}>
+        <Route exact path={"/home"}>
          {<Home />}
         </Route>
 

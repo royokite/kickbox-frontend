@@ -2,6 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
+
     <footer className="bg-gray-900 text-white">
       <div className='text-center mt-10' >
             <p className="font-medium">
@@ -94,7 +95,6 @@ const Footer = () => {
         <p className="mt-4 text-center">&copy; 2022 Class Collection.</p>
       </div>
     </footer>
-
   )
 }
 
