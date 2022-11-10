@@ -8,7 +8,7 @@ const [productsList, setProductsList] = useState([]);
 
 
 useEffect(()=> {
-  fetch("https://fierce-ridge-31455.herokuapp.com/products")
+  fetch("http://localhost:9292/products")
   .then(res => res.json())
   .then(products => setProductsList(products))
   //console.log(productsList);
@@ -22,7 +22,7 @@ useEffect(()=> {
     <>
     {/* <Search setSearch={setSearch} search={search} /> */}
 
-    <ProductCollection products={productsList} />
+    <AllProducts products={productsList} />
     </>
   )
 }
