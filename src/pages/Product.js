@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Products from '../Components/AllProducts';
+import React, { useEffect, useState } from 'react';
+import AllProducts from '../Components/AllProducts';
 // import Search from '../Components/Search';
 
 const Products = () => {

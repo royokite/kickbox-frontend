@@ -1,12 +1,12 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductCollection = ({products, action, removeCard}) => {
+const AllProducts = ({products}) => {
 
   const displayProducts = products.map(product => {
     return (
       <>
-      <ProductCard key={product.id} product={product} action={action} removeCard={removeCard} />
+      <ProductCard key={product.id} product={product}/>
       </>
     )
   })
@@ -23,4 +23,4 @@ const ProductCollection = ({products, action, removeCard}) => {
   )
 }
 
-export default ProductCollection 
+export default AllProducts 
