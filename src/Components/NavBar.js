@@ -6,7 +6,7 @@ const NavBar = () => {
         <h1 className='ClassCollection text-center text-xl text-white italic font-sans'>KICKBOX</h1>
         <ul>
             <li>
-                <a href='/project'>
+                <a href='/'>
                     Home 
                 </a>
             </li>
