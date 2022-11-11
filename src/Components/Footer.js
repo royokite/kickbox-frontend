@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer bg-violet-600/100">
 
       <div className="policies">
         <a className="hover:opacity-75" href="/"> Privacy Policy </a>

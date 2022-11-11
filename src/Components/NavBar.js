@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <nav className='nav'>
-        <h1 className='ClassCollection text-center text-xl text-white italic font-sans'>KICKBOX</h1>
+    <nav className='nav '>
+        <img id="logo" src="./images/kickbox-logo.png" alt="page logo" style={{width: '8rem', height: '8rem'}} />
         <ul>
             <li>
                 <a href='/'>
@@ -14,12 +14,6 @@ const NavBar = () => {
             <li>
                 <a href='/products'>
                     Products 
-                </a>
-            </li>
-
-            <li>
-                <a href='/reviews'>
-                    Reviews 
                 </a>
             </li>
         </ul>
