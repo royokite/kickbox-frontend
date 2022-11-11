@@ -21,7 +21,6 @@ const ProductCard = ({product}) => {
         </article>
       </article>
     </section>
-
   )
 //   return (
 //     <article className="border-double border-4 border-lime-400 bg-gray-800 rounded-lg p-2 text-sky-200">

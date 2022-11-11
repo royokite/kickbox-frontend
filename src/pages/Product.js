@@ -11,18 +11,19 @@ useEffect(()=> {
   fetch("http://localhost:9292/products")
   .then(res => res.json())
   .then(products => setProductsList(products))
-  //console.log(productsList);
+
   .catch(err => console.log(err))
 }, [])
 
-const visibleProducts = productsList.filter(product=>{
-  return product.title.toLowerCase().includes(search.toLowerCase())
- })
+// const visibleProducts = productsList.filter(product=>{
+//   return product.title.toLowerCase().includes(search.toLowerCase())
+//  })
+
   return (
     <>
     <Search setSearch={setSearch} search={search} /> 
 
-    <AllProducts products={visibleProducts} />
+    <AllProducts products={productsList}/>
     </>
   )
 }
