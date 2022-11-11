@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const AllProducts = ({products}) => {
+const AllProducts = ({products,reviews}) => {
 
   const displayProducts = products.map(product => {
     return (
