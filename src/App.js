@@ -25,7 +25,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route exact path="/products" element={<Products productsList={productsList} search={search} setSearch={setSearch}/>} />
-            <Route exact path="/products/:id" element={<EachProduct productsList={productsList}/>} />
+            <Route exact path="/products/:id" element={<EachProduct productsList={productsList} setProductsList={setProductsList}/>} />
             <Route exact path="/" element={<Home />} />
             <Route path="*" element={<h1 className="text-violet-600/100 text-5xl">404 Not Found!</h1>} />
           </Routes>

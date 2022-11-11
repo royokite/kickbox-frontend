@@ -1,15 +1,15 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const AllProducts = ({products,reviews}) => {
+const AllProducts = ({ products }) => {
 
-  const displayProducts = products.map(product => {
-    return (
-      <>
-      <ProductCard key={product.id} product={product}/>
-      </>
-    )
-  })
+  const displayProducts = products.map(product => <ProductCard key={product.id} product={product} />)
+  //   return (
+  //     <>
+  //     <ProductCard key={product.id} product={product}/>
+  //     </>
+  //   )
+  // })
 
   return (
     <section className="m-10">

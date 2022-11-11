@@ -1,14 +1,18 @@
 import React from "react";
 
-const EachReview = ({ review }) => {
+const EachReview = ({ review, setProductsList }) => {
 
-    function handleDelete() {
-        console.log("deleted!")
-    }
-
-    function handleEdit() {
-        console.log("edited!")
-    }
+    function handleDelete(event) {
+        fetch(`http://localhost:9393/reviews/${review.id}`,{
+          method: "DELETE"
+        })
+        
+        event.target.parentNode.parentNode.remove()
+      }
+    
+      function handleEdit() {
+          console.log("edited!")
+      }
 
     return (
         <section className="border m-2 rounded-md p-3">
