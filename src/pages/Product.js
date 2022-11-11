@@ -15,15 +15,15 @@ useEffect(()=> {
   .catch(err => console.log(err))
 }, [])
 
-// const visibleProducts = productsList.filter(product=>{
-//   return product.title.toLowerCase().includes(search.toLowerCase())
-//  })
+const visibleProducts = productsList.filter(product=>{
+  return product.product_name.toLowerCase().includes(search.toLowerCase())
+ })
 
   return (
     <>
     <Search setSearch={setSearch} search={search} /> 
 
-    <AllProducts products={productsList}/>
+    <AllProducts products={visibleProducts}/>
     </>
   )
 }

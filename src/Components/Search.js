@@ -12,13 +12,6 @@ function Search({search, setSearch}) {
         placeholder='Search...' 
         />
          <button className='px-4 text-white bg-purple-600 border-l rounded'>Search</button>
-        {/* <select>
-          <option value='all'>All</option>
-          <option value='jewelery'>Jewelery</option>
-          <option value="men's clothing">Men's Clothing</option>
-          <option value="women's clothing">Women's Clothing</option>
-          <option value='electronics'>Electronics</option>
-        </select> */}
        
       </div>
     </div>
