@@ -15,40 +15,40 @@ const Gallery = () => {
       dotColorInactive="rgb(0 0 0)"    
     >
       <Carousel.Item>
-        <img width="100%" src="./images/shoe1.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe1.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe2.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe2.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe3.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe3.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe4.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe4.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe5.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe5.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe6.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe6.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe7.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe7.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe8.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe8.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe9.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe9.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe10.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe10.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe11.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe11.jpg" style={imageStyle} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src="./images/shoe12.jpg" style={imageStyle} />
+        <img alt='shoe appearance' src="./images/shoe12.jpg" style={imageStyle} />
       </Carousel.Item>
     </Carousel>
   )

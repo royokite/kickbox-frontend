@@ -16,12 +16,6 @@ const NavBar = () => {
                     Products 
                 </a>
             </li>
-
-            <li>
-                <a href='/reviews'>
-                    Reviews 
-                </a>
-            </li>
         </ul>
 
         
