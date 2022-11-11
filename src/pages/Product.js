@@ -7,7 +7,7 @@ const Products = ({ productsList, search, setSearch }) => {
     <>
     <Search setSearch={setSearch} search={search} /> 
 
-    <AllProducts products={productsList}/>
+    <AllProducts products={visibleProducts}/>
     </>
   )
 }
