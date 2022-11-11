@@ -12,13 +12,12 @@ const AllProducts = ({products}) => {
   })
 
   return (
-    <>
-    <div>
-    </div>
-    <div className='allProducts'>
-        {displayProducts}
-    </div>
-    </>
+    <section className="m-10">
+      <h1 className="text-violet-600/100 text-3xl text-center font-bold  border-gray-800 bg-gray-800/90 py-3 mb-3">Sneakers List</h1>
+      <article className='grid gap-4 grid-cols-4 m-6'>
+          {displayProducts}
+      </article>
+    </section>
 
   )
 }
