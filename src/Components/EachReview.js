@@ -10,9 +10,7 @@ const EachReview = ({ review, setComment, setRating }) => {
         event.target.parentNode.parentNode.remove()
       }
     
-      function handleEdit(id) {   
-        console.warn("function called", review.id-1)
-        let item=review.id-1
+      function handleEdit() {   
         setComment(review.comment)
         setRating(review.rating)
       }
