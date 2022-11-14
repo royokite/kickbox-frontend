@@ -98,6 +98,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
                 onChange={(e) => setRating(e.target.value)}
             />
             <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Add Review</button>
+            <button className="bg-lime-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Update Review</button>
           </form>
         </article>
         <article className='my-10' id='reviews-container'>    
