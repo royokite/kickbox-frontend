@@ -12,7 +12,7 @@ function App() {
   const [search, setSearch] = useState('');
 
   useEffect(()=> {
-    fetch("http://localhost:9292/products")
+    fetch("http://localhost:9393/products")
     .then(res => res.json())
     .then(products => setProductsList(products))
   

@@ -68,8 +68,8 @@ const EachProduct = ({ productsList, setProductsList }) => {
 
   return (
     <section className='border border-violet-600 bg-gray-800/90 text-slate-200/100 flex m-10'>
-      <img src={shoe.img_url} alt="product appearance" style={{width: '50%'}} />
-      <article className='px-6 py-4 m-10'>
+      <img src={shoe.img_url} alt="product appearance" style={{width: '50%', height: '50%'}} />
+      <article className='px-6 py-4 m-10 w-full'>
         <button onClick={() => navigate("/products")} className="bg-sky-500 m-2 p-2 rounded-md hover:bg-blue-800 col-start-1 text-slate-200 disabled:opacity-0 " >Go back</button>
         <h2 className="text-violet-600/100 text-2xl font-bold">{shoe.product_name}</h2>
         <p className='text-slate-200/100 my-2'>{shoe.description}</p>
@@ -98,7 +98,6 @@ const EachProduct = ({ productsList, setProductsList }) => {
                 onChange={(e) => setRating(e.target.value)}
             />
             <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Add Review</button>
-            <button className="bg-lime-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Update Review</button>
 
           </form>
         </article>
