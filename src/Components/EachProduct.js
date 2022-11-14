@@ -11,7 +11,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
   const { id } = useParams()
   const shoe = productsList.find(shoe => shoe.id === Number(id))
 
-  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} />)
+  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} setComment={setComment} setRating={setRating}/>)
 
   function handleAdd(event) {
     event.preventDefault()
@@ -46,7 +46,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
 
 
    
-    fetch(`http://localhost:9393/reviews`, {
+    fetch(`http://localhost:9292/reviews`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -97,7 +97,9 @@ const EachProduct = ({ productsList, setProductsList }) => {
                 value={rating}
                 onChange={(e) => setRating(e.target.value)}
             />
-            <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200" >Add Review</button>
+            <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Add Review</button>
+            <button className="bg-lime-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Update Review</button>
+
           </form>
         </article>
         <article className='my-10' id='reviews-container'>    
