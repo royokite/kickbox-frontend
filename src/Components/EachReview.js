@@ -24,7 +24,7 @@ const EachReview = ({ review, setComment, setRating }) => {
             <article className="flex">
                 <button 
                     onClick={handleEdit} 
-                    className="bg-slate-700 m-2 p-2 rounded-md hover:bg-sky-500 col-start-1 text-slate-200 disabled:opacity-0 " 
+                    className="bg-slate-700 m-2 p-2 rounded-md hover:bg-sky-500 col-start-1 text-slate-200 disabled opacity-0 " 
                     style={{width: "100%"}}
                 > Edit                    
                 </button>
