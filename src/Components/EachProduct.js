@@ -11,7 +11,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
   const { id } = useParams()
   const shoe = productsList.find(shoe => shoe.id === Number(id))
 
-  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} />)
+  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} setComment={setComment} setRating={setRating}/>)
 
   function handleAdd(event) {
     event.preventDefault()
@@ -46,7 +46,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
 
 
    
-    fetch(`http://localhost:9393/reviews`, {
+    fetch(`http://localhost:9292/reviews`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

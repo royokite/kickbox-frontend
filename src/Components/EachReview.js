@@ -1,17 +1,20 @@
 import React from "react";
 
-const EachReview = ({ review, setProductsList }) => {
+const EachReview = ({ review, setComment, setRating }) => {
 
     function handleDelete(event) {
-        fetch(`http://localhost:9393/reviews/${review.id}`,{
+        fetch(`http://localhost:9292/reviews/${review.id}`,{
           method: "DELETE"
         })
         
         event.target.parentNode.parentNode.remove()
       }
     
-      function handleEdit() {
-          console.log("edited!")
+      function handleEdit(id) {   
+        console.warn("function called", review.id-1)
+        let item=review.id-1
+        setComment(review.comment)
+        setRating(review.rating)
       }
 
     return (
