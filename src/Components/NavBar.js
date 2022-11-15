@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
 
   let activeStyle = {
-    backgroundColor: "rgb(226 232 240)",
+    backgroundColor: "rgb(30 41 59)",
   };    
   
     return (
@@ -17,8 +17,8 @@ const NavBar = () => {
             </article>
             
             <article  className="mt-8 flex-none p-2">
-                <NavLink to="/" exact="true" end className="bg-violet-500 m-2 p-2 rounded-md hover:bg-slate-200" style={({ isActive }) => isActive ? activeStyle : undefined }>Home</NavLink>
-                <NavLink to="/products" exact="true" className="bg-violet-500 m-2 p-2 rounded-md hover:bg-slate-200" style={({ isActive }) => isActive ? activeStyle : undefined }>Products</NavLink>
+                <NavLink to="/" exact="true" end className="bg-violet-500 m-2 p-2 rounded-md hover:bg-slate-800" style={({ isActive }) => isActive ? activeStyle : undefined }>Home</NavLink>
+                <NavLink to="/products" exact="true" className="bg-violet-500 m-2 p-2 rounded-md hover:bg-slate-800" style={({ isActive }) => isActive ? activeStyle : undefined }>Products</NavLink>
             </article>
         </nav>
     );
